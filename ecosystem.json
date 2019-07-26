@@ -2,7 +2,7 @@
     "apps":[
         {
             "name":"vueMall",
-            "script":"test",
+            "script":"",
              "env":{
                  "COMMON_VARIABLE":"true"
              },
