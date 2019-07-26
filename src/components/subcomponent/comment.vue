@@ -43,7 +43,7 @@ export default {
     //获取分页数据
     getList() {
       this.$http
-        .get("http://faguo.free.idcfengye.com/comment/" + this.index)
+        .get("comment/" + this.index)
         .then(res => res.json())
         .then(res => {
           this.list = res.data;
@@ -53,7 +53,7 @@ export default {
     //获取全部数据
     async getAlllist() {
       let data = await this.$http
-        .get("http://faguo.free.idcfengye.com/comment")
+        .get("comment")
         .then(res => res.json());
       this.list = data;
     },
@@ -65,7 +65,7 @@ export default {
       //上传到数据库
       this.$http
         .post(
-        "http://faguo.free.idcfengye.com/comment",
+        "comment",
           {//对象参数
             name: this.name,
             comment: this.comment
@@ -94,7 +94,7 @@ export default {
     getMore() {
       this.index = this.index + 1;
       this.$http
-        .get("http://faguo.free.idcfengye.com/comment/" + this.index)
+        .get("comment/" + this.index)
         .then(res => res.json())
         .then(res => {
           //concat不改变原数组

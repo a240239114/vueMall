@@ -83,7 +83,7 @@ export default {
   methods: {
     async getAlllist() {
       let res = await this.$http
-        .get("http://faguo.free.idcfengye.com/good/" + this.id)
+        .get("good/" + this.id)
         .then(res => res.json());
       this.list = res.data;
       this.kucun = res.data.kucun;

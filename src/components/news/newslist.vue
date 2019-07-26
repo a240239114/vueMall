@@ -2,7 +2,6 @@
   <div>
     <ul>
         <li v-for="item in newslist" :key="item._id">
-          //route-link要是在li之外,会出现BUG,而且不能通过路由传递ID
           <router-link :to="'/shouye/newsinfo/'+item._id">
 
           <div class="left">
@@ -41,7 +40,7 @@ export default {
   methods: {
     getNewslist() {
       this.$http
-        .get("http://faguo.free.idcfengye.com/newslist")
+        .get("newslist")
         .then(res => res.json())
         .then(res => {
           this.newslist = res.data;

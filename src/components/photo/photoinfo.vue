@@ -43,7 +43,7 @@ export default {
   methods: {
     getAll() {
       this.$http
-        .get("http://faguo.free.idcfengye.com/image/" + this.id)
+        .get("image/" + this.id)
         .then(res => res.json())
         .then(res => {
           this.list1 = res.data.image[0];

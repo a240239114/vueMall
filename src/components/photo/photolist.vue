@@ -55,7 +55,7 @@ export default {
   methods: {
     getlist() {
       this.$http
-        .get("http://faguo.free.idcfengye.com/image")
+        .get("image")
         .then(res => res.json())
         .then(res => {
           this.list = res.data;
@@ -63,7 +63,7 @@ export default {
     },
     getlistinfoByid(id) {
       this.$http
-        .get("http://faguo.free.idcfengye.com/image/" + id)
+        .get("image/" + id)
         .then(res => res.json())
         .then(res => {
           this.imagelist = res.data;

@@ -129,7 +129,7 @@ Vue.filter('dateFormat',function(dateStr,pattern="YYYY-MM-DD HH:mm:ss"){
 })
 
 //配置全局的请求根路径
-// Vue.http.options.root = 'http://192.168.31.93:3000';
+Vue.http.options.root = 'http://vueMalljiekou.gjxbewater.cn/';
 Vue.http.options.emulateJSON = true;
 
 //导入mui样式,和拓展图标

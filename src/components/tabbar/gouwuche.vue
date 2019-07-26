@@ -68,7 +68,7 @@ export default {
     getAll() {//获取所有数据
       this.$store.state.car.forEach(item => {
         this.$http
-          .get("http://faguo.free.idcfengye.com/good/" + item.id)
+          .get("good/" + item.id)
           .then(res => res.json())
           .then(res => {
             this.list.push(res.data);

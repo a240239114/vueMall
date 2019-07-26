@@ -40,7 +40,7 @@ export default {
     },
     methods:{
         getMessage(){
-            this.$http.get("http://faguo.free.idcfengye.com/newslist/"+this.id)
+            this.$http.get("newslist/"+this.id)
                       .then(res=>res.json())
                       .then(res=>{
                           this.list = res.data

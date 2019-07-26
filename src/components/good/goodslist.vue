@@ -37,7 +37,7 @@ export default {
     //获取所有的商品数据
     async getAlllist() {
       let res = await this.$http
-        .get("http://faguo.free.idcfengye.com/good")
+        .get("good")
         .then(res => res.json());
       this.list = res.data;
     }
