@@ -2,7 +2,7 @@
     "apps":[
         {
             "name":"vueMall",
-            "script":"webpack-dev-server --open --port 3003 --hot",
+            "script":"webpack-dev-server --disableHostCheck=true --open --port 3003 --hot",
              "env":{
                  "COMMON_VARIABLE":"true"
              },
