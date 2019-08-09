@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-// //导入头部组件
+// //导入头部组件 测试
 // import { Header } from 'mint-ui';
 // Vue.component(Header.name, Header);
 
@@ -128,8 +128,8 @@ Vue.filter('dateFormat',function(dateStr,pattern="YYYY-MM-DD HH:mm:ss"){
     return moment(dateStr).format(pattern)
 })
 
-//配置全局的请求根路径
-Vue.http.options.root = 'http://vueMalljiekou.gjxbewater.cn/';
+//配置全局的请求根路径,asd
+Vue.http.options.root = 'http://vueMalljiekou.gjxbewater.cn:8080/';
 Vue.http.options.emulateJSON = true;
 
 //导入mui样式,和拓展图标

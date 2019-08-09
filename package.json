@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --disableHostCheck=true --open --port 3003 --hot",
+    "dev": "webpack-dev-server --open --port 3003 --hot",
     "gjx": "vue-cli-service serve --open"
   },
   "keywords": [],
@@ -32,11 +32,10 @@
     "vue-loader": "^13.3.0",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.8.1",
-    "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "mint-ui": "^2.2.9",
     "node-sass": "^4.12.0",
     "sass-loader": "^6.0.7",
